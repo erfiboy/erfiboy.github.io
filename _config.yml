@@ -7,7 +7,10 @@ version: 2
 
 # Personal info
 name: Erfan Nosrati
-title: M.Sc. Computer Science @ University of Calgary | Networking & Distributed Systems
+title: Ph.D. Student in Computer Science, University of Calgary
+tagline: "Networking and systems for AI: RDMA, collective communication, data center load balancing"
+location: Calgary, Canada
+cv_file: cv/CV_Erfan_Nosrati.pdf
 email: erfan.nosrati@ucalgary.ca
 # email_title: Email (Email title override)
 phone: (+1) 403-383-0176
@@ -34,13 +37,23 @@ additional_links:
 # gtag: "UA-00000000-0"
 # google_analytics: "UA-00000000-0"
 
+# Research interests (shown as chips under About)
+interests:
+  - Data center networking
+  - RDMA / RoCEv2
+  - Load balancing
+  - Collective communication (NCCL)
+  - Distributed ML systems
+  - Programmable networks (SONiC/SAI)
+
 # About Section
 # about_title: About Me (Use this to override about section title)
 # about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am an M.Sc. student in Computer Science at the **University of Calgary** (GPA 4.0/4.0), working in the
-  [Network Lab](https://cspages.ucalgary.ca/~mghaderi/) with Prof. Majid Ghaderi, and a research collaborator
-  of [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/). I received my B.Sc. in Electrical Engineering
+  I am a **Ph.D. student in Computer Science at the University of Calgary**, co-supervised by
+  [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/) (University of Calgary) and
+  [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University). Before starting my Ph.D.,
+  I was an M.Sc. student at the University of Calgary (GPA 4.0/4.0), and I received my B.Sc. in Electrical Engineering
   (Digital Systems) from **Sharif University of Technology**.
 
   My research focuses on **data center networking for AI clusters**: RDMA load balancing, collective communication
@@ -49,12 +62,13 @@ about_content: | # this will include new lines to allow paragraphs
 
 content:
   - title: Research Experience
+    nav: Research
     layout: list
     content:
       - layout: left
         border: weak
         title: NCCL Performance Analysis
-        sub_title: Research Collaboration, Prof. Rachit Agarwal
+        sub_title: Ph.D. research with Prof. Rachit Agarwal (Cornell) and Prof. Majid Ghaderi (UCalgary)
         caption: Summer 2025 - Present
         link: https://www.cs.cornell.edu/~ragarwal/
         link_text: Prof. Rachit Agarwal
@@ -95,6 +109,7 @@ content:
           - Developed a framework that monitors the network to detect DDoS attacks and drops malicious packets
             identified by the model.
   - title: Publications & Awards
+    nav: Publications
     layout: list
     content:
       - layout: left
@@ -162,6 +177,14 @@ content:
       - layout: top-right
         border: weak
         title: University of Calgary
+        sub_title: Ph.D. in Computer Science
+        caption: Present
+        description: |
+          Co-supervised by [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/) (University of Calgary)
+          and [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University).
+      - layout: top-right
+        border: weak
+        title: University of Calgary
         sub_title: M.Sc. in Computer Science
         caption: Aug 2023 - Present
         description: |
@@ -179,6 +202,7 @@ content:
           Related courses: Foundations of Blockchain & Cryptocurrencies (A+), Artificial Intelligence (A+),
           Cloud Software & Mobile Networks (A+), Data Structures & Algorithms (B+)
   - title: Service & Leadership
+    nav: Service
     layout: list
     content:
       - layout: right
@@ -200,6 +224,7 @@ content:
           featuring speakers from academia and industry on research, career paths, and ideas in electrical engineering,
           computer engineering, and computer science.
   - title: Technical Skills
+    nav: Skills
     layout: text
     content: |
       **Programming languages:** Python, C++, C, Java

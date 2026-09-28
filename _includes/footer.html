@@ -1,9 +1,9 @@
-<div class="container footer-container">
-  <p>
-    {{ site.name | escape }} -
-    <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-    {%- if site.footer_show_references -%}
-      &nbsp;- {{ site.references_title | default: "References on request" }}
-    {%- endif -%}
-  </p>
-</div>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | escape }}
+      {%- if site.email %} · <a href="mailto:{{ site.email }}">{{ site.email | escape }}</a>{% endif -%}
+      {%- if site.footer_show_references %} · {{ site.references_title | default: "References on request" }}{% endif -%}
+    </p>
+    <a class="to-top no-print" href="#top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+</footer>

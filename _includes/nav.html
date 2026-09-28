@@ -1,0 +1,17 @@
+<nav class="nav no-print" aria-label="Sections">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="#top">{{ site.name | escape }}</a>
+    <ul class="nav-links">
+      <li><a href="#{{ site.about_title | default: 'About' | slugify }}">{{ site.about_nav | default: 'About' }}</a></li>
+      {%- for section in site.content -%}
+        <li><a href="#{{ section.title | slugify }}">{{ section.nav | default: section.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+    {%- unless site.darkmode == true or site.darkmode == 'never' -%}
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+        <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+      </button>
+    {%- endunless -%}
+  </div>
+</nav>

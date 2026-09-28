@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if site.darkmode == true %} data-theme="dark"{% elsif site.darkmode == 'never' %} data-theme="light"{% endif %}>
 
 {%- include head.html -%}
 
-<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+<body>
+  {%- if jekyll.environment == 'production' and site.gtm -%}
+    {%- include gtm_body.html -%}
+  {%- endif -%}
 
+  {%- include nav.html -%}
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
-    <div class="wrapper">
+    {%- include about.html -%}
 
-      {%- if jekyll.environment == 'production' and site.gtm -%}
-        {%- include gtm_body.html -%}
-      {%- endif -%}
-
-      {%- include about.html -%}
-
-      {%- if site.version == 2 -%}
-        {% for section in site.content %}
-          <div class="container {{ section.layout }}-container">
-            <h3 id="{{ section.title | slugify }}">{{ section.title }}</h3>
+    {%- if site.version == 2 -%}
+      {% for section in site.content %}
+        <section class="section {{ section.layout }}-section" id="{{ section.title | slugify }}">
+          <div class="wrap">
+            <h2 class="section-title">{{ section.title }}</h2>
             {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
           </div>
-        {% endfor %}
-      {% else %}
-        {%- include v1/default.html -%}
-      {%- endif -%}
-    </div>
+        </section>
+      {% endfor %}
+    {% else %}
+      <div class="wrap">{%- include v1/default.html -%}</div>
+    {%- endif -%}
   </main>
 
   {%- include footer.html -%}
-  {% if site.darkmode == false %}
-    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
-  {% endif %}
+  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
 </body>
 
 </html>
