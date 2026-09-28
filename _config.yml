@@ -52,8 +52,9 @@ interests:
 about_content: | # this will include new lines to allow paragraphs
   I am a **Ph.D. student in Computer Science at the University of Calgary**, co-supervised by
   [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/) (University of Calgary) and
-  [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University). Before starting my Ph.D.,
-  I was an M.Sc. student at the University of Calgary (GPA 4.0/4.0), and I received my B.Sc. in Electrical Engineering
+  [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University), starting in Fall 2026.
+  Before that, I completed my M.Sc. in Computer Science at the University of Calgary under the supervision of
+  Prof. Majid Ghaderi (GPA 4.0/4.0), and I received my B.Sc. in Electrical Engineering
   (Digital Systems) from **Sharif University of Technology**.
 
   My research focuses on **data center networking for AI clusters**: RDMA load balancing, collective communication
@@ -178,7 +179,7 @@ content:
         border: weak
         title: University of Calgary
         sub_title: Ph.D. in Computer Science
-        caption: Present
+        caption: Fall 2026 - Present
         description: |
           Co-supervised by [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/) (University of Calgary)
           and [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University).
@@ -186,9 +187,9 @@ content:
         border: weak
         title: University of Calgary
         sub_title: M.Sc. in Computer Science
-        caption: Aug 2023 - Present
+        caption: Aug 2023 - 2026
         description: |
-          GPA: 4.0/4.0 (A+)
+          Supervised by [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/). GPA: 4.0/4.0 (A+)
 
           Related courses: Network Systems Security (A+), Randomized Algorithms (A+), Design & Analysis of Algorithms I (A+),
           Algorithms for Distributed Computing (A+), Principles of Computer Security (A+)
