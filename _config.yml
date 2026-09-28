@@ -50,9 +50,9 @@ interests:
 # about_title: About Me (Use this to override about section title)
 # about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a **Ph.D. student in Computer Science at the University of Calgary**, co-supervised by
+  I am a **Ph.D. student in Computer Science at the University of Calgary** (since Fall 2026), co-supervised by
   [Prof. Majid Ghaderi](https://cspages.ucalgary.ca/~mghaderi/) (University of Calgary) and
-  [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University), starting in Fall 2026.
+  [Prof. Rachit Agarwal](https://www.cs.cornell.edu/~ragarwal/) (Cornell University).
   Before that, I completed my M.Sc. in Computer Science at the University of Calgary under the supervision of
   Prof. Majid Ghaderi (GPA 4.0/4.0), and I received my B.Sc. in Electrical Engineering
   (Digital Systems) from **Sharif University of Technology**.
@@ -69,7 +69,7 @@ content:
       - layout: left
         border: weak
         title: NCCL Performance Analysis
-        sub_title: Ph.D. research with Prof. Rachit Agarwal (Cornell) and Prof. Majid Ghaderi (UCalgary)
+        sub_title: Research collaboration with Prof. Rachit Agarwal (Cornell), continuing as Ph.D. research
         caption: Summer 2025 - Present
         link: https://www.cs.cornell.edu/~ragarwal/
         link_text: Prof. Rachit Agarwal
@@ -82,7 +82,7 @@ content:
       - layout: left
         border: weak
         title: RDMA Load Balancing in AI Clusters
-        sub_title: University of Calgary Network Lab, Prof. Majid Ghaderi
+        sub_title: University of Calgary Network Lab, Prof. Majid Ghaderi (M.Sc. & Ph.D. research)
         caption: Fall 2023 - Present
         link: https://arxiv.org/abs/2506.08132
         link_text: Paper on arXiv
